@@ -1,4 +1,4 @@
-@set ver=1.0
+@set ver= 1.0
 @setlocal DisableDelayedExpansion
 @echo off
 
@@ -85,7 +85,7 @@ popd
 
 cls
 color 07
-title  Microsoft Distribute O.E.M (digital.store) %ver%
+title Microsoft Distribute O.E.M (digital.store)%ver%
 
 set _args=
 set _elev=
@@ -137,8 +137,8 @@ set  "_Green="Black" "Green""
 set "_Yellow="Black" "Yellow""
 )
 
-set "nceline=echo: &echo ==== ERROR ==== &echo:"
-set "eline=echo: &call :dk_color %Red% "==== ERROR ====" &echo:"
+set "nceline=echo: &echo ==== PERHATIAN ==== &echo:"
+set "eline=echo: &call :dk_color %Red% "==== PERHATIAN ====" &echo:"
 if %~z0 GEQ 200000 (
 set "_exitmsg=Go back"
 set "_fixmsg=Go back to Main Menu, select Troubleshoot and run Fix Licensing option."
@@ -240,7 +240,7 @@ if not [%%#]==[] (echo "%%#" | find "127.69" %nul1% && (echo "%%#" | find "127.6
 if defined old (
 echo ________________________________________________
 %eline%
-echo Not For Sale (digital.store) %ver%
+echo Not For Sale (digital.store)%ver%
 echo ________________________________________________
 echo:
 if not %_unattended%==1 (
