@@ -85,7 +85,7 @@ popd
 
 cls
 color 07
-title  Troubleshoot by digital.storeid %ver%
+title Microsoft Distribute O.E.M (digital.store) %ver%
 
 set _args=
 set _elev=
@@ -240,17 +240,17 @@ if not [%%#]==[] (echo "%%#" | find "127.69" %nul1% && (echo "%%#" | find "127.6
 if defined old (
 echo ________________________________________________
 %eline%
-echo Versi lama Troubleshoot %ver%
+echo Not For Sale (digital.store) %ver%
 echo ________________________________________________
 echo:
 if not %_unattended%==1 (
-echo [1] Update Set-Troubleshoot
 echo [0] Troubleshoot
+echo [1] Goto Website
 echo:
 call :dk_color %_Green% "Enter a menu option in the Keyboard [1,0] :"
 choice /C:10 /N
 if !errorlevel!==2 rem
-if !errorlevel!==1 (start ht%-%tps://github.com/digi%-%tal-storeid/troubl%-%eshoot start & exit /b)
+if !errorlevel!==1 (start ht%-%tps://www.microsoft.com/id-id/micro%-%soft-365/micro%-%soft-office start & exit /b)
 )
 )
 
