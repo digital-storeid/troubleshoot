@@ -1,4 +1,4 @@
-@set ver= 1.0
+@set ver=1.0
 @setlocal DisableDelayedExpansion
 @echo off
 
@@ -85,7 +85,7 @@ popd
 
 cls
 color 07
-title Microsoft Distribute O.E.M (digital.store)%ver%
+title  Microsoft Dev (DIGITAL.STOREID) %ver%
 
 set _args=
 set _elev=
@@ -152,7 +152,7 @@ set "_fixmsg=In MAS folder, run Troubleshoot script and select Fix Licensing opt
 if %winbuild% LSS 10240 (
 %eline%
 echo Unsupported OS version detected [%winbuild%].
-echo Troubleshoot is supported only for Windows 10/11.
+echo This Tools supported only for Windows 10/11.
 echo Use Online KMS Activation option.
 goto dk_done
 )
@@ -240,17 +240,17 @@ if not [%%#]==[] (echo "%%#" | find "127.69" %nul1% && (echo "%%#" | find "127.6
 if defined old (
 echo ________________________________________________
 %eline%
-echo Not For Sale (digital.store)%ver%
+echo Not for Sale (DIGITAL.STOREID) %ver%
 echo ________________________________________________
 echo:
 if not %_unattended%==1 (
-echo [0] Troubleshoot
-echo [1] Goto Website
+echo [0] Diagnosis
+echo [1] Website Official
 echo:
-call :dk_color %_Green% "Enter a menu option in the Keyboard [1,0] :"
+call :dk_color %_Green% "Enter a menu option in the Keyboard [0,1] :"
 choice /C:10 /N
 if !errorlevel!==2 rem
-if !errorlevel!==1 (start ht%-%tps://www.microsoft.com/id-id/micro%-%soft-365/micro%-%soft-office start & exit /b)
+if !errorlevel!==1 (start start ht%-%tps://www.microsoft.com/id-%-%id/micros%-%oft-365/micro%-%soft-office start & exit /b)
 )
 )
 
@@ -1344,9 +1344,7 @@ set notfoundaltactID=1
 )
 )
 )
-pause /b
+exit /b
 
 ::========================================================================================================================================
 :: Leave empty line below
-
-pause
