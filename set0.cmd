@@ -240,7 +240,7 @@ if not [%%#]==[] (echo "%%#" | find "127.69" %nul1% && (echo "%%#" | find "127.6
 if defined old (
 echo ________________________________________________
 %eline%
-echo Not for Sale (DIGITAL.STOREID) %ver%
+echo Not for Sale -- DIGITAL.STOREID -- %ver%
 echo ________________________________________________
 echo:
 if not %_unattended%==1 (
